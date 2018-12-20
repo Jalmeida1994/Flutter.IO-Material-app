@@ -41,7 +41,41 @@ class _LoginPageState extends State<LoginPage> {
             // TODO: Remove filled: true values (103)
             // TODO: Wrap Password with AccentColorOverride (103)
             // TODO: Add TextField widgets (101)
+            // [Name]
+            TextField(
+              decoration: InputDecoration(
+                filled: true,
+                labelText: 'Username',
+              ),
+            ),
+
+            SizedBox(height: 12.0), 
+            // spacer
+
+            // [Password]
+            TextField(
+              decoration: InputDecoration(
+                filled: true,
+                labelText: 'Password',
+              ),
+              obscureText: true,
+            ),
+
             // TODO: Add button bar (101)
+            ButtonBar(
+              FlatButton(
+              children: <Widget>[
+                child: Text('CANCEL'),
+                onPressed: () {
+                },
+              )
+                RaisedButton(
+                  child: Text('NEXT'),
+                  onPressed: ()  {
+                  },
+                  ),
+              ],
+            )
           ],
         ),
       ),
